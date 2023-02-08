@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Scene</title>
+    <style>
+        html, body {
+            overflow: hidden;
+            width   : 100%;
+            height  : 100%;
+            margin  : 0;
+            padding : 0;
+        }
+
+        #renderCanvas {
+            width   : 100%;
+            height  : 100%;
+            touch-action: none;
+        }
+
+        #property{
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: #ffffff;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        #status{
+            position: fixed;
+            top: 10px;
+            left: 270px;
+            background: #ffffff;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="property">
+        <div>
+            半導體機台 - 統計資訊
+        </div>
+        <br/>
+        <div>
+            Standard Deviation: 769.93
+        </div>
+        <div>
+            Average: 54954.8
+        </div>
+        <div>
+            Uniformity: 98.599
+        </div>
+        <div>
+            Max: 54954.8
+        </div>
+        <div>
+            Min: 54954.8
+        </div>
+        <div>
+            Max - Min: 54954.8
+        </div>
+    </div>
+    <div id="status">
+        <div>
+            半導體機台 - 狀態資訊
+        </div>
+        <br/>
+        <div>
+            目前機台正常運作
+        </div>
+    </div>
+    <canvas id="renderCanvas"></canvas>
+
+    <script src="https://preview.babylonjs.com/babylon.js"></script>
+    <script src="https://preview.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+    <!-- <babylon model="./semi-v1.glb" templates.main.params.fill-screen="true"></babylon> -->
+    <script src="./script.js"></script>
+</body>
+</html>
